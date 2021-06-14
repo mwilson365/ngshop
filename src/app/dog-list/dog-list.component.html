@@ -3,9 +3,10 @@
     <div>
     <div *ngFor= "let dog of dogs"  [id]="dog.id" [dog]="dog">
         {{ dog.name }}
-        <span>{{startCounter()}}</span>
+        
         <!-- {{counter.value}} -->
         <button (click)="increment()">Like</button>
+        <span> {{numLikes}}</span>
        <img width="50%" alt="dog gif" [src]="dog.thumbnail">
        <counter [Counter]=dogs[Dog]></counter>   
        </div>
