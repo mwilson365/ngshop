@@ -19,8 +19,7 @@ export class DogListComponent implements OnInit {
   // dogs: this.getAll();
   constructor(private dogsService: DogsService) {
      
-    this.counters = [];
-    
+     
   }
   ngOnInit(): void {
     this.getUpdates();
